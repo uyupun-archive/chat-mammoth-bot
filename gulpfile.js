@@ -1,13 +1,16 @@
+// モジュール読み込み
 const gulp = require('gulp');
 const axios = require('axios');
 const env = require('node-env-file');
 
 env('.env')
 
+// 環境変数設定
 const post_url = process.env.POST_URL
 const get_url = process.env.GET_URL
 const room_id = process.env.ROOM_ID
-let timing = process.env.TIMING
+let interval = process.env.INTERVAL
+
 let word
 
 gulp.task('default', () => {
@@ -29,5 +32,5 @@ gulp.task('default', () => {
                     markdown: 0
                 })
         })
-    }, eval(timing))
+    }, eval(interval))
 })
