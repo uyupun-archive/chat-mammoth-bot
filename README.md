@@ -9,3 +9,9 @@ GET_URL=https://chat-mammoth.herokuapp.com/api/word/get
 ROOM_ID=:room_id
 ...
 ```
+
+### 2. Start up local server
+
+```
+$ gulp
+```
