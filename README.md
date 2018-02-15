@@ -1,3 +1,11 @@
+# How to use
+
+### 1. Edit '.env'
+
+```
+...
 POST_URL=https://chat-mammoth.herokuapp.com/api/comment/bot
 GET_URL=https://chat-mammoth.herokuapp.com/api/word/get
-ROOM_ID=3dc3e58fb841658754917f9db19ba863
+ROOM_ID=:room_id
+...
+```

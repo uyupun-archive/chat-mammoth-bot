@@ -4,9 +4,9 @@ const env = require('node-env-file');
 
 env('.env')
 
-const post_url = process.env.BOT_POST_URL
-const get_url = process.env.BOT_GET_URL
-const room_id = process.env.BOT_ROOM_ID
+const post_url = process.env.POST_URL
+const get_url = process.env.GET_URL
+const room_id = process.env.ROOM_ID
 let word
 
 gulp.task('default', () => {
