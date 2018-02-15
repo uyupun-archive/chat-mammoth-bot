@@ -13,6 +13,7 @@ $ npm i
 POST_URL=https://chat-mammoth.herokuapp.com/api/comment/bot
 GET_URL=https://chat-mammoth.herokuapp.com/api/word/get
 ROOM_ID=:room_id
+TIMING=:tinming_function
 ...
 ```
 

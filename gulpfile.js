@@ -7,6 +7,7 @@ env('.env')
 const post_url = process.env.POST_URL
 const get_url = process.env.GET_URL
 const room_id = process.env.ROOM_ID
+let timing = process.env.TIMING
 let word
 
 gulp.task('default', () => {
@@ -28,5 +29,5 @@ gulp.task('default', () => {
                     markdown: 0
                 })
         })
-    }, Math.floor(Math.random() * (10000 - 1000) + 1000))
+    }, eval(timing))
 })
