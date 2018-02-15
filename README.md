@@ -16,7 +16,7 @@ ROOM_ID=:room_id
 ...
 ```
 
-### 3. Start up local server
+### 3. Start up bot
 
 ```
 $ gulp
