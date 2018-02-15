@@ -12,21 +12,21 @@ let word
 gulp.task('default', () => {
     setInterval(() => {
 
-    Promise.resolve()
-        .then(() => {
-        axios.get(get_url)
-        .then(response => {
-        word = response.data.query.random[0].title
-    })
-})
-.then(() => {
-        axios.post(post_url, {
-        room_id: room_id,
-        user_id: 'bot',
-        screen_name: 'Bot',
-        comment: word,
-        markdown: 0
-    })
-})
-}, Math.floor(Math.random() * (10000 - 1000) + 1000))
+        Promise.resolve()
+            .then(() => {
+                axios.get(get_url)
+                    .then(response => {
+                        word = response.data.query.random[0].title
+                    })
+                })
+            .then(() => {
+                axios.post(post_url, {
+                room_id: room_id,
+                user_id: 'bot',
+                screen_name: 'Bot',
+                comment: word,
+                markdown: 0
+            })
+        })
+    }, Math.floor(Math.random() * (10000 - 1000) + 1000))
 })
