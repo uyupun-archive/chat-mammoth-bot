@@ -1,6 +1,12 @@
 # How to use
 
-### 1. Edit '.env'
+### 1. Module install
+
+```
+$ npm i
+```
+
+### 2. Edit '.env'
 
 ```
 ...
@@ -10,7 +16,7 @@ ROOM_ID=:room_id
 ...
 ```
 
-### 2. Start up local server
+### 3. Start up local server
 
 ```
 $ gulp
